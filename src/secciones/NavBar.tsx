@@ -6,7 +6,7 @@ function NavBar() {
   const menus = [
     { name: 'Nosotros', link: '#nosotros' },
     { name: 'Quiero Saltar', link: '#' },
-    { name: 'Staff', link: '#' },
+    { name: 'Staff', link: '#staff' },
     { name: 'Saltos de Exhibición', link: '#' },
     { name: 'Ubicación', link: '#' },
     { name: 'Contactos', link: '#' },

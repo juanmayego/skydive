@@ -1,8 +1,8 @@
-import { Button } from 'flowbite-react';
 import './App.css'
 import NavBar from './secciones/NavBar'
 import Carousel from './secciones/Carousel'
 import Nosotros from './secciones/Nosotros'
+import Staff from './secciones/Staff'
 
 function App() {
 
@@ -17,8 +17,8 @@ function App() {
         <Nosotros/>
       </div>
 
-      <div id='nosotros' className="container h-screen mx-auto flex items-center justify-center bg-white">
-          <Button>Click me</Button>
+      <div id='staff' className="w-full">
+          <Staff/>
       </div>
       
     </>
