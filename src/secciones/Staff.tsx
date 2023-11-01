@@ -1,11 +1,11 @@
 'use client';
 import { Card } from 'flowbite-react';
-import staff01 from '../assets/img/staff/staff-00.jpg'
-import staff02 from '../assets/img/staff/staff-01.jpg'
+import staff01 from '../assets/img/staff/staff-00.jpeg'
+import staff02 from '../assets/img/staff/staff-01.jpeg'
 import staff03 from '../assets/img/staff/staff-02.png'
-import staff04 from '../assets/img/staff/staff-03.webp'
-import staff05 from '../assets/img/staff/staff-04.webp'
-import staff06 from '../assets/img/staff/staff-05.jpg'
+import staff04 from '../assets/img/staff/staff-03.jpeg'
+import staff05 from '../assets/img/staff/staff-04.jpeg'
+import staff06 from '../assets/img/staff/staff-05.jpeg'
 
 
 export default function DefaultCarousel() {
