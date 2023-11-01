@@ -3,6 +3,7 @@ import NavBar from './secciones/NavBar'
 import Header from './secciones/Header'
 import Nosotros from './secciones/Nosotros'
 import Staff from './secciones/Staff'
+import Saltar from './secciones/Saltar'
 
 function App() {
 
@@ -15,6 +16,10 @@ function App() {
       </>
       <div id='nosotros' className="w-full">
         <Nosotros/>
+      </div>
+
+      <div id='saltar' className="w-full">
+        <Saltar/>
       </div>
 
       <div id='staff' className="w-full">
