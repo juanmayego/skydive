@@ -4,6 +4,7 @@ import Header from './secciones/Header'
 import Nosotros from './secciones/Nosotros'
 import Staff from './secciones/Staff'
 import Saltar from './secciones/Saltar'
+import Saltar_2 from './secciones/Saltar_2'
 
 function App() {
 
@@ -18,8 +19,12 @@ function App() {
         <Nosotros/>
       </div>
 
-      <div id='saltar' className="w-full">
+      {/* <div id='saltar' className="w-full">
         <Saltar/>
+      </div> */}
+
+      <div id='saltar' className="w-full">
+        <Saltar_2/>
       </div>
 
       <div id='staff' className="w-full">
