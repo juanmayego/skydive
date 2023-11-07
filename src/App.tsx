@@ -4,6 +4,8 @@ import Header from './secciones/Header'
 import Nosotros from './secciones/Nosotros'
 import Staff from './secciones/Staff'
 import Saltar from './secciones/Saltar'
+import Contacto from './secciones/Contacto'
+import Info from './secciones/Footer'
 
 function App() {
 
@@ -24,6 +26,14 @@ function App() {
 
       <div id='staff' className="w-full">
           <Staff/>
+      </div>
+
+      <div id='contacto' className="w-full">
+          <Contacto/>
+      </div>
+
+      <div id='info' className="w-full">
+          <Info/>
       </div>
       
     </>
