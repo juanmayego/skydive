@@ -14,32 +14,65 @@ export default function DefaultCarousel() {
     {
       img: staff01,
       name: 'Juan P. Montaña',
-      description: 'Instructor de Paracaidismo',
+      description: [
+        'Instructor de Paracaidismo',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+        'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+        'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+        'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+      ]
     },
     {
       img: staff02,
       name: 'Rafael Yegros',
-      description: 'Instructor de Paracaidismo',
+      description: [
+        'Instructor de Paracaidismo',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+        'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+        'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+        'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+      ]
     },
     {
       img: staff03,
       name: 'Ernesto Nuñez',
-      description: 'Instructor de Paracaidismo',
+      description: [
+        'Instructor de Paracaidismo',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+        'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+        'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+        'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+      ]
     },
     {
       img: staff04,
       name: 'Ronald Gonzalez',
-      description: 'Instructor de Paracaidismo',
+      description: [
+        'Instructor de Paracaidismo',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+        'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+        'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+      ]
     },
     {
       img: staff05,
       name: 'Lucas Cáceres',
-      description: 'Instructor de Paracaidismo',
+      description: [
+        'Instructor de Paracaidismo',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+        'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+        'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+      ]
     },
     {
       img: staff06,
       name: 'Fernando Gonzalez',
-      description: 'Instructor de Paracaidismo',
+      description: [
+        'Instructor de Paracaidismo',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+        'standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+        'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+      ]
     }
   ]
 
@@ -52,16 +85,16 @@ export default function DefaultCarousel() {
                 return (
                 <>
                   <Card
-                    className="max-w-md mx-2"
+                    className="max-w-md mx-2 justify-start h-full"
                     imgAlt="Meaningful alt text for an image that is not purely decorative"
                     imgSrc={staff.img}
                     >
-                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <h5 className="relative top-0 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         {staff.name}
                     </h5>
-                    <p className="font-normal text-gray-700 dark:text-gray-400">
-                        {staff.description}
-                    </p>
+                    { staff.description.map((description) => {
+                      return <p className="font-normal text-gray-700 dark:text-gray-400"> {description} </p>
+                    })}
                   </Card>
                 </>)
               })
