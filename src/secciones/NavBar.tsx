@@ -8,8 +8,7 @@ function NavBar() {
     { name: 'Quiero Saltar', link: '#saltar' },
     { name: 'Staff', link: '#staff' },
     { name: 'Saltos de Exhibición', link: '#' },
-    { name: 'Ubicación', link: '#' },
-    { name: 'Contactos', link: '#' },
+    { name: 'Contactos', link: '#contacto' },
   ]
 
   return (

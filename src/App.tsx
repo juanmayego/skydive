@@ -3,10 +3,9 @@ import NavBar from './secciones/NavBar'
 import Header from './secciones/Header'
 import Nosotros from './secciones/Nosotros'
 import Staff from './secciones/Staff'
-import Saltar from './secciones/Saltar'
 import Contacto from './secciones/Contacto'
-import Info from './secciones/Footer'
-import Saltar_2 from './secciones/Saltar_2'
+import Footer from './secciones/Footer'
+import Saltar from './secciones/Saltar'
 
 function App() {
 
@@ -21,12 +20,8 @@ function App() {
         <Nosotros/>
       </div>
 
-      {/* <div id='saltar' className="w-full">
-        <Saltar/>
-      </div> */}
-
       <div id='saltar' className="w-full">
-        <Saltar_2/>
+        <Saltar/>
       </div>
 
       <div id='staff' className="w-full">
@@ -37,8 +32,8 @@ function App() {
           <Contacto/>
       </div>
 
-      <div id='info' className="w-full">
-          <Info/>
+      <div id='footer' className="w-full">
+          <Footer/>
       </div>
       
     </>

@@ -1,15 +1,13 @@
 
 'use client';
-
-import { Card } from 'flowbite-react';
-import { GoogleMap, LoadScript, MarkerF } from '@react-google-maps/api';
-import.meta.env.VITE_GOOGLE_MAPS_API_KEY
+import { GoogleMap, LoadScript, MarkerF, MarkerProps } from '@react-google-maps/api';
+// import.meta.env.VITE_GOOGLE_MAPS_API_KEY
 
 
 
 function Contacto() {
 
-  const apiKey = process.env.VITE_GOOGLE_MAPS_API_KEY;
+  const apiKey = 'AIzaSyCcyuGd02jDZlJSOMgAQF4kpZ186VWedWE' //process.env.VITE_GOOGLE_MAPS_API_KEY;
   
   const mapStyles = {
     height: '400px',
@@ -21,30 +19,29 @@ function Contacto() {
     lng: -57.253311868108845
   };
 
-  const marker = {
+  const marker: MarkerProps = {
     position: defaultCenter,
-    title: 'Free Spirit'
+    title: '     Free Spirit',
+    // label: '     Free Spirit',
+    // icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
   };
 
 
   return (
-    <div className="bg-white py-14 sm:py-22 max-w-7xl m-auto">
+    <div className="bg-white pt-14 sm:py-22 max-w-7xl m-auto">
       <p className="w-full text-center m-2 pb-5 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contacto </p>
-      <Card>
+      <div className='max-w-5/1'>
+
+      </div>
       <LoadScript googleMapsApiKey={apiKey}>
-      <GoogleMap
-        mapContainerStyle={mapStyles}
-        zoom={17}
-        center={defaultCenter}
-      >
-        <MarkerF
-      position={marker.position}
-    >
-      
-    </MarkerF>
+        <GoogleMap
+          mapContainerStyle={mapStyles}
+          zoom={17}
+          center={defaultCenter}
+        >
+          <MarkerF {...marker} ></MarkerF>
       </GoogleMap>
     </LoadScript>
-    </Card>
     </div>
   );
 }
