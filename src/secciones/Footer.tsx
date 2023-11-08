@@ -15,7 +15,7 @@ function Info() {
       </>
       <div className="w-full">
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright href="#" by="PureCode" year={2023} />
+          <Footer.Copyright href="https://purecode.dev" by="PureCode" year={2023} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="https://www.facebook.com/freespiritparacaidismo" icon={BsFacebook} />
             <Footer.Icon href="https://www.instagram.com/freespiritpy/" icon={BsInstagram} />

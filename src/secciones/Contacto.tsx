@@ -7,7 +7,7 @@ import { GoogleMap, LoadScript, MarkerF, MarkerProps } from '@react-google-maps/
 
 function Contacto() {
 
-  const apiKey = 'AIzaSyCcyuGd02jDZlJSOMgAQF4kpZ186VWedWE' //process.env.VITE_GOOGLE_MAPS_API_KEY;
+  const apiKey = '' //process.env.VITE_GOOGLE_MAPS_API_KEY;
   
   const mapStyles = {
     height: '400px',
